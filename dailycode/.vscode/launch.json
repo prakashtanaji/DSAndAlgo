@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - bstkth",
+            "request": "launch",
+            "mainClass": "bstkth",
+            "projectName": "dailycode_78184406"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - bst",
+            "request": "launch",
+            "mainClass": "bst",
+            "projectName": "dailycode_78184406"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - isvalidbraces",
+            "request": "launch",
+            "mainClass": "isvalidbraces",
+            "projectName": "dailycode_78184406"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - lis",
+            "request": "launch",
+            "mainClass": "lis",
+            "projectName": "dailycode_78184406"
+        }
+    ]
+}
