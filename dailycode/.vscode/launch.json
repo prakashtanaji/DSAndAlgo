@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - inordertraverse",
+            "request": "launch",
+            "mainClass": "inordertraverse"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - bstkth",
             "request": "launch",
             "mainClass": "bstkth",
