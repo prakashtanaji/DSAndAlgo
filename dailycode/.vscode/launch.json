@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - traprainwater",
+            "request": "launch",
+            "mainClass": "traprainwater"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - inordertraverse",
             "request": "launch",
             "mainClass": "inordertraverse"
