@@ -2,6 +2,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - trappinrainwater",
+            "request": "launch",
+            "mainClass": "trappinrainwater"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - interwaevingstrings",
+            "request": "launch",
+            "mainClass": "interwaevingstrings"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - inordertraverse",
             "request": "launch",
             "mainClass": "inordertraverse"
