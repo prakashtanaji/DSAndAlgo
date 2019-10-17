@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - anagrams",
+            "request": "launch",
+            "mainClass": "anagrams"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - undirectedadjlist",
             "request": "launch",
             "mainClass": "undirectedadjlist"
