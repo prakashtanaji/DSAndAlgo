@@ -2,6 +2,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - undirectedadjlist",
+            "request": "launch",
+            "mainClass": "undirectedadjlist"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - subarraysequalstok",
+            "request": "launch",
+            "mainClass": "subarraysequalstok"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - traprainwater",
             "request": "launch",
             "mainClass": "traprainwater"
