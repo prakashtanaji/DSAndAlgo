@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - scramblestring",
+            "request": "launch",
+            "mainClass": "scramblestring"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - anagrams",
             "request": "launch",
             "mainClass": "anagrams"
