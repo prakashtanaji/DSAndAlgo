@@ -2,6 +2,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - isbst",
+            "request": "launch",
+            "mainClass": "isbst"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - anagramslexiorder",
+            "request": "launch",
+            "mainClass": "anagramslexiorder"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - UnionFind",
+            "request": "launch",
+            "mainClass": "UnionFind"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - unionfind",
+            "request": "launch",
+            "mainClass": "unionfind"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - knapsack",
+            "request": "launch",
+            "mainClass": "knapsack"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - interleavestring",
+            "request": "launch",
+            "mainClass": "interleavestring"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - closestancester",
+            "request": "launch",
+            "mainClass": "closestancester"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - scramblestring",
             "request": "launch",
             "mainClass": "scramblestring"
