@@ -3,7 +3,7 @@ class anagrams {
     static int counter = 0;
     public static void main(String[] args) {
 
-        String str = "abac";
+        String str = "baaac";
 
         char[] c = str.toCharArray();
 
@@ -20,6 +20,10 @@ class anagrams {
         }
 
         for(int i=p1; i<temp.length; i++) {
+
+            // this will filter the duplicates
+            // but not completely.
+            // There will still be if all the duplicates are not together and alphabatically sorted
 
             if(p1!=i && temp[i] == temp[p1]) continue;
             counter++;
