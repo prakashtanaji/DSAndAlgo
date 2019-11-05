@@ -5,14 +5,14 @@ class subarraysequalstok {
         System.out.println("subarraysequalstok");
 
         int[] arr = new int[]{3,4,2,5,3,3,1};
-        int k =7;
+        int k =4;
 
-        System.out.println("Finding the count of subarray equals K using method 1:");
+        System.out.println("Finding the count of subarray equals K using method 1(O(n^2)):");
         int count = checkAtEachElementMethod1(arr, k);
         System.out.println(" Count of subarrays:" + count);
 
-        System.out.println("Finding the count of subarray equals K using method 2:");
-        count = checkAtEachElementMethod1(arr, k);
+        System.out.println("Finding the count of subarray equals K using method 2(O(n)), but extra O(n) space for map:");
+        count = curSumApproachMethod2(arr, k);
         System.out.println(" Count of subarrays:" + count);
     }
 
@@ -59,7 +59,7 @@ class subarraysequalstok {
 
             if(mp.containsKey(currSum - k)) {
                 //countOfSubArray++;
-                // actually the subarray ending at this number is same as the previous occurance of diff in the map
+                // actually the count of subarrays ending at this number is same as the previous occurance of diff in the map
                 countOfSubArray+=mp.get(currSum - k);
             }
 
