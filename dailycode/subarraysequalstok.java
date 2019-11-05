@@ -58,7 +58,9 @@ class subarraysequalstok {
             }
 
             if(mp.containsKey(currSum - k)) {
-                countOfSubArray++;
+                //countOfSubArray++;
+                // actually the subarray ending at this number is same as the previous occurance of diff in the map
+                countOfSubArray+=mp.get(currSum - k);
             }
 
             mp.put(currSum, mp.getOrDefault(currSum, 0)+1);
