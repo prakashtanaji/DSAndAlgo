@@ -30,20 +30,20 @@ class prims {
                 public int compare(Map.Entry<Integer, EdgeP> e1, Map.Entry<Integer, EdgeP> e2) {
                     return e1.getValue().wt - e2.getValue().wt;
                 }
-            });
-        Set<Integer> st = new HashSet<Integer>();
-        Set<EdgeP> resultEdges = new HashSet<>();
+            }); // V
+        Set<Integer> st = new HashSet<Integer>(); // V
+        Set<EdgeP> resultEdges = new HashSet<>(); // V
 
         //Map.Entry<Integer, Integer> entry0= new AbstractMap.SimpleEntry<>(1,1);
         
         pq.add(new AbstractMap.SimpleEntry<Integer, EdgeP>(vertexStart, new EdgeP(vertexStart, 0)));
 
-        while(!pq.isEmpty() && st.size()!= gp.V) {
-            Map.Entry<Integer, EdgeP> entry = pq.poll();
+        while(!pq.isEmpty() && st.size()!= gp.V) { // V
+            Map.Entry<Integer, EdgeP> entry = pq.poll(); // log V
             resultEdges.add(new EdgeP(entry.getKey(), entry.getValue().dest));
 
-            for(EdgeP edge: gp.getEdges(entry.getKey())) {
-                if(st.contains(edge.dest)) continue;
+            for(EdgeP edge: gp.getEdges(entry.getKey())) { // V
+                if(st.contains(edge.dest)) continue; // 1 - no collision
                 pq.add(new AbstractMap.SimpleEntry<Integer, EdgeP>(edge.dest, new EdgeP(entry.getKey(), edge.wt)));
             }
 
@@ -51,7 +51,7 @@ class prims {
         }
 
         Iterator it = resultEdges.iterator();
-        while(it.hasNext()) {
+        while(it.hasNext()) { // V
             EdgeP ep = (EdgeP)it.next();
             // note: we repurposed EdgeP !
             System.out.println(":"+ep.dest+":"+ep.wt);

@@ -11,7 +11,7 @@ class btfip {
 
         printTopView(root);
     }
-
++
     static TNode build(int[] in, int inSt, int inEnd, int[] pre, int preSt, int preEnd) {
         if(inSt>inEnd) return null;
 

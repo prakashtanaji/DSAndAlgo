@@ -2,6 +2,66 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - listswapK",
+            "request": "launch",
+            "mainClass": "listswapK"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - btfip",
+            "request": "launch",
+            "mainClass": "btfip"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - wordsearchinboard",
+            "request": "launch",
+            "mainClass": "wordsearchinboard"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - lcsubsequence",
+            "request": "launch",
+            "mainClass": "lcsubsequence"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - prims",
+            "request": "launch",
+            "mainClass": "prims"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - kruskal",
+            "request": "launch",
+            "mainClass": "kruskal"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - directedTopologicalSort",
+            "request": "launch",
+            "mainClass": "directedTopologicalSort"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - unDirectedHasCycleDFS",
+            "request": "launch",
+            "mainClass": "unDirectedHasCycleDFS"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LongestPalindromeManachers",
+            "request": "launch",
+            "mainClass": "LongestPalindromeManachers"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - isRotatedPalindrome",
+            "request": "launch",
+            "mainClass": "isRotatedPalindrome"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - isbst",
             "request": "launch",
             "mainClass": "isbst"

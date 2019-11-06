@@ -12,7 +12,7 @@ class subarraysequalstok {
         System.out.println(" Count of subarrays:" + count);
 
         System.out.println("Finding the count of subarray equals K using method 2(O(n)), but extra O(n) space for map:");
-        count = currSumMethod2(arr, k);
+        count = curSumApproachMethod2(arr, k);
         System.out.println(" Count of subarrays:" + count);
     }
 
@@ -38,26 +38,32 @@ class subarraysequalstok {
         return countOfSubArray;
     }
 
-    static int currSumMethod2(int[] arr, int k) {
+    static int curSumApproachMethod2(int[] arr, int k) {
 
         int elementAccessCounter = 0;
 
         int countOfSubArray = 0;
 
-        int currSum = 0;
         Map<Integer, Integer> mp = new HashMap<Integer, Integer>();
+        int currSum = 0;
 
         for(int i=0; i<arr.length; i++) {
+
             elementAccessCounter++;
+
             currSum+= arr[i];
 
-            if(currSum == k) countOfSubArray++;
-
-            if(mp.containsKey(currSum-k)) {
+            if(currSum == k) {
                 countOfSubArray++;
             }
 
-            mp.put(currSum, mp.getOrDefault(currSum, 0) + 1);
+            if(mp.containsKey(currSum - k)) {
+                //countOfSubArray++;
+                // actually the count of subarrays ending at this number is same as the previous occurance of diff in the map
+                countOfSubArray+=mp.get(currSum - k);
+            }
+
+            mp.put(currSum, mp.getOrDefault(currSum, 0)+1);
         }
 
         System.out.println("    Accessed element times:"+ elementAccessCounter);
