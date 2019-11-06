@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - lis",
+            "request": "launch",
+            "mainClass": "lis",
+            "projectName": "DSAndAlgo_c1984a45"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - subarraysequalstok",
+            "request": "launch",
+            "mainClass": "subarraysequalstok",
+            "projectName": "DSAndAlgo_c1984a45"
+        }
+    ]
+}
