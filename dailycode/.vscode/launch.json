@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - longestvalidparen",
+            "request": "launch",
+            "mainClass": "longestvalidparen"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - strstr",
             "request": "launch",
             "mainClass": "strstr"
