@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - strstr",
+            "request": "launch",
+            "mainClass": "strstr"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - listswapK",
             "request": "launch",
             "mainClass": "listswapK"
