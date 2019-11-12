@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - linkedlistquickpivot",
+            "request": "launch",
+            "mainClass": "linkedlistquickpivot"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - phonenumbertotext",
             "request": "launch",
             "mainClass": "phonenumbertotext"
