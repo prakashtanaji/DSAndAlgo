@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - similargroups",
+            "request": "launch",
+            "mainClass": "similargroups",
+            "projectName": "dailycode_7302943c"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - linkedlistquickpivot",
             "request": "launch",
             "mainClass": "linkedlistquickpivot"
