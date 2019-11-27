@@ -4,8 +4,19 @@
             "type": "java",
             "name": "CodeLens (Launch) - similargroups",
             "request": "launch",
-            "mainClass": "similargroups",
-            "projectName": "dailycode_7302943c"
+            "mainClass": "similargroups"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - sumsubsets",
+            "request": "launch",
+            "mainClass": "sumsubsets"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - staircaseproblem",
+            "request": "launch",
+            "mainClass": "staircaseproblem"
         },
         {
             "type": "java",
