@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - isomorphic",
+            "request": "launch",
+            "mainClass": "isomorphic",
+            "projectName": "dailycode_7302943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "dailycode_7302943c"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - similargroups",
             "request": "launch",
             "mainClass": "similargroups"
