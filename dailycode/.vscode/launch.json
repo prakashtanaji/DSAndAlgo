@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - divWithoutOp",
+            "request": "launch",
+            "mainClass": "divWithoutOp",
+            "projectName": "dailycode_7302943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - maxSquare",
+            "request": "launch",
+            "mainClass": "maxSquare",
+            "projectName": "dailycode_7302943c"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - isomorphic",
             "request": "launch",
             "mainClass": "isomorphic",
