@@ -2,6 +2,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - operationQueue",
+            "request": "launch",
+            "mainClass": "operationQueue",
+            "projectName": "dailycode_7302943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - operationList",
+            "request": "launch",
+            "mainClass": "operationList",
+            "projectName": "dailycode_7302943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - operationMapSet",
+            "request": "launch",
+            "mainClass": "operationMapSet",
+            "projectName": "dailycode_7302943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - operationMap",
+            "request": "launch",
+            "mainClass": "operationMap",
+            "projectName": "dailycode_7302943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - operationBit",
+            "request": "launch",
+            "mainClass": "operationBit",
+            "projectName": "dailycode_7302943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - operationBit",
+            "request": "launch",
+            "mainClass": "Operations.operationBit",
+            "projectName": "dailycode_7302943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - bitoperation",
+            "request": "launch",
+            "mainClass": "bitoperation",
+            "projectName": "dailycode_7302943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CellsAfternDays",
+            "request": "launch",
+            "mainClass": "CellsAfternDays",
+            "projectName": "dailycode_7302943c"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - divWithoutOp",
             "request": "launch",
             "mainClass": "divWithoutOp",
