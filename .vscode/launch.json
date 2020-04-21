@@ -1,5 +1,51 @@
 {
     "configurations": [
+    {
+        "name": ".NET Core Launch (console)",
+        "type": "coreclr",
+        "request": "launch",
+        "preLaunchTask": "build",
+        "program": "${workspaceFolder}/bin/Debug/<target-framework>/<project-name.dll>",
+        "args": [],
+        "cwd": "${workspaceFolder}",
+        "stopAtEntry": false,
+        "console": "internalConsole"
+    },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - nqueen",
+            "request": "launch",
+            "mainClass": "nqueen",
+            "projectName": "DSAndAlgo_ad3e943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - treefrommatrix",
+            "request": "launch",
+            "mainClass": "treefrommatrix",
+            "projectName": "DSAndAlgo_ad3e943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - nodeAtDistFromLeaf",
+            "request": "launch",
+            "mainClass": "nodeAtDistFromLeaf",
+            "projectName": "DSAndAlgo_ad3e943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - converttofulltree",
+            "request": "launch",
+            "mainClass": "converttofulltree",
+            "projectName": "DSAndAlgo_ad3e943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - sinknodetobottom",
+            "request": "launch",
+            "mainClass": "sinknodetobottom",
+            "projectName": "DSAndAlgo_ad3e943c"
+        },
         {
             "type": "java",
             "name": "CodeLens (Launch) - wordbreak",
