@@ -14,6 +14,252 @@
         },
         {
             "type": "java",
+            "name": "CodeLens (Launch) - operationQueue",
+            "request": "launch",
+            "mainClass": "operationQueue",
+            "projectName": "dailycode_7302943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - operationList",
+            "request": "launch",
+            "mainClass": "operationList",
+            "projectName": "dailycode_7302943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - operationMapSet",
+            "request": "launch",
+            "mainClass": "operationMapSet",
+            "projectName": "dailycode_7302943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - operationMap",
+            "request": "launch",
+            "mainClass": "operationMap",
+            "projectName": "dailycode_7302943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - operationBit",
+            "request": "launch",
+            "mainClass": "operationBit",
+            "projectName": "dailycode_7302943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - operationBit",
+            "request": "launch",
+            "mainClass": "Operations.operationBit",
+            "projectName": "dailycode_7302943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - bitoperation",
+            "request": "launch",
+            "mainClass": "bitoperation",
+            "projectName": "dailycode_7302943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CellsAfternDays",
+            "request": "launch",
+            "mainClass": "CellsAfternDays",
+            "projectName": "dailycode_7302943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - divWithoutOp",
+            "request": "launch",
+            "mainClass": "divWithoutOp",
+            "projectName": "dailycode_7302943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - maxSquare",
+            "request": "launch",
+            "mainClass": "maxSquare",
+            "projectName": "dailycode_7302943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - isomorphic",
+            "request": "launch",
+            "mainClass": "isomorphic",
+            "projectName": "dailycode_7302943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "dailycode_7302943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - similargroups",
+            "request": "launch",
+            "mainClass": "similargroups"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - sumsubsets",
+            "request": "launch",
+            "mainClass": "sumsubsets"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - staircaseproblem",
+            "request": "launch",
+            "mainClass": "staircaseproblem"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - linkedlistquickpivot",
+            "request": "launch",
+            "mainClass": "linkedlistquickpivot"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - phonenumbertotext",
+            "request": "launch",
+            "mainClass": "phonenumbertotext"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - longestvalidparen",
+            "request": "launch",
+            "mainClass": "longestvalidparen"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - strstr",
+            "request": "launch",
+            "mainClass": "strstr"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - listswapK",
+            "request": "launch",
+            "mainClass": "listswapK"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - btfip",
+            "request": "launch",
+            "mainClass": "btfip"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - wordsearchinboard",
+            "request": "launch",
+            "mainClass": "wordsearchinboard"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - lcsubsequence",
+            "request": "launch",
+            "mainClass": "lcsubsequence"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - prims",
+            "request": "launch",
+            "mainClass": "prims"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - kruskal",
+            "request": "launch",
+            "mainClass": "kruskal"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - directedTopologicalSort",
+            "request": "launch",
+            "mainClass": "directedTopologicalSort"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - unDirectedHasCycleDFS",
+            "request": "launch",
+            "mainClass": "unDirectedHasCycleDFS"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LongestPalindromeManachers",
+            "request": "launch",
+            "mainClass": "LongestPalindromeManachers"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - isRotatedPalindrome",
+            "request": "launch",
+            "mainClass": "isRotatedPalindrome"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - isbst",
+            "request": "launch",
+            "mainClass": "isbst"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - anagramslexiorder",
+            "request": "launch",
+            "mainClass": "anagramslexiorder"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - UnionFind",
+            "request": "launch",
+            "mainClass": "UnionFind"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - unionfind",
+            "request": "launch",
+            "mainClass": "unionfind"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - knapsack",
+            "request": "launch",
+            "mainClass": "knapsack"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - closestancester",
+            "request": "launch",
+            "mainClass": "closestancester"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - scramblestring",
+            "request": "launch",
+            "mainClass": "scramblestring"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - anagrams",
+            "request": "launch",
+            "mainClass": "anagrams"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - undirectedadjlist",
+            "request": "launch",
+            "mainClass": "undirectedadjlist"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - subarraysequalstok",
+            "request": "launch",
+            "mainClass": "subarraysequalstok"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - inordertraverse",
             "request": "launch",
             "mainClass": "inordertraverse"

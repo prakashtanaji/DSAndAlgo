@@ -5,9 +5,9 @@ class lis {
 
     static int iExeCount = 0;
     static int[] arrRes;
-    static ArrayList<Integer>[] arrResLst;
+    static List<Integer>[] arrResLst;
     public static void main(String[] args) {
-        int[] arr = { 10, 11, 12, 4, 5,15};
+        int[] arr = { 10, 11, 12, 2, 18, 19, 4, 5,15};
 
         arrRes = new int[arr.length];
 
@@ -20,6 +20,8 @@ class lis {
         // for(int i =0; i< arr.length; i++) {
         //     arrResLst[i].add(arr[i]);
         // }
+
+        System.out.println("Max increasing subsequence size is "+ lis3(arr, arr.length-1, Integer.MAX_VALUE));
 
         Arrays.fill(arrRes, 0);
 
@@ -100,5 +102,19 @@ class lis {
         //arrRes[curr] = Math.max(1,Math.max(iVal1, iVal2));
 
         return Math.max(iVal1, iVal2);
+    }
+
+    static int lis3(int[] arr, int curr, int lastMax) {
+        
+        if(curr<0) return 0;
+
+        int a = Integer.MIN_VALUE;
+        if(arr[curr]<lastMax) {
+            a = 1+ lis3(arr, curr-1, arr[curr]);
+        }
+
+        int b = lis3(arr, curr-1, lastMax);
+
+        return Math.max(a, b);
     }
 }
