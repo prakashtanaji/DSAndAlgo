@@ -2,19 +2,19 @@ class linkedlistquickpivot {
 
     public static void main(String[] args) {
 
-        LLNode root = new LLNode(1);
-        root.next = new LLNode(8);
-        root.next.next = new LLNode(3);
-        root.next.next.next = new LLNode(4);
-        root.next.next.next.next = new LLNode(9);
-        root.next.next.next.next.next = new LLNode(7);
+        LListNode root = new LListNode(1);
+        root.next = new LListNode(8);
+        root.next.next = new LListNode(3);
+        root.next.next.next = new LListNode(4);
+        root.next.next.next.next = new LListNode(9);
+        root.next.next.next.next.next = new LListNode(7);
 
         int k = 5;
 
-        LLNode first = root;
+        LListNode first = root;
         //LLNode second = root;
 
-        LLNode curr = root;
+        LListNode curr = root;
 
         while(curr != null) {
             if(curr._val <= k) {
@@ -36,7 +36,7 @@ class linkedlistquickpivot {
         }
     }
 
-    static void swap(LLNode n1, LLNode n2) {
+    static void swap(LListNode n1, LListNode n2) {
         int temp = n1._val;
         n1._val = n2._val;
         n2._val = temp;
@@ -45,7 +45,7 @@ class linkedlistquickpivot {
 
 class LLNode {
     int _val;
-    LLNode next;
+    LListNode next;
 
     public LLNode(int val) {
         _val = val;
