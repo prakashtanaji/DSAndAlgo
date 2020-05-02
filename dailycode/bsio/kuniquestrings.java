@@ -15,7 +15,7 @@ public class kuniquestrings {
     // Just add the chars counts after initial parse.
 
     public static void main(final String[] args) {
-        final String s = "ddaaabccc";
+        final String s = "ddafabccc";
         final int k = 2;
         final Map<Character, Integer> mp = new HashMap<>();
 
@@ -23,24 +23,20 @@ public class kuniquestrings {
             mp.put(c, mp.getOrDefault(c, 0) + 1);
         }
 
-        final PriorityQueue<Integer[]> que = new LinkedList<>(new Comparator() {
-            @Override
-            public int compare(Object o1, Object o2) {
-                // TODO Auto-generated method stub
-                return 0;
-            }
-        });
+        int[] charCounts = new int[mp.size()];
+        int i = 0;
 
-        // C(unique chars) times C*logC
-        for (final Map.Entry<Character, Integer> entry : mp) {
-            que.add(new int[]{entry.getKey()-65, entry.getValue()});
+        // distinct chars => C
+        // ClogC
+        for(int count: mp.values())
+        {
+            charCounts[i++] = count;
         }
 
-        int C = que.size();
-        int result = 0;
-        while(C != k) {
-            result += que.remove()[1];
-            C--;
+        Arrays.sort(charCounts);
+        int result =0;
+        for(i =0; i<charCounts.length-k; i++) {
+            result += charCounts[i];
         }
 
         System.out.println("Min number of chars to be removed is " + result);

@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - kuniquestrings",
+            "request": "launch",
+            "mainClass": "kuniquestrings",
+            "projectName": "DSAndAlgo_ad3e943c"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - longestsubstrwithkmaxunique",
             "request": "launch",
             "mainClass": "longestsubstrwithkmaxunique",
