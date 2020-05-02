@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - smallestsubarraysum",
+            "request": "launch",
+            "mainClass": "smallestsubarraysum",
+            "projectName": "DSAndAlgo_ad3e943c"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - firstoddnumbersum",
             "request": "launch",
             "mainClass": "firstoddnumbersum",
