@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - stronglyconnectedcomponents",
+            "request": "launch",
+            "mainClass": "stronglyconnectedcomponents",
+            "projectName": "DSAndAlgo_ad3e943c"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - trailingzeroes",
             "request": "launch",
             "mainClass": "trailingzeroes",
