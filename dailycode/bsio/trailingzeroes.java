@@ -9,7 +9,6 @@ public class trailingzeroes {
     }
 
     static int solve(int k) {
-        // Write your code here
         int[] nums = new int[k];
         
         for(int i=0; i<k; i++) {
