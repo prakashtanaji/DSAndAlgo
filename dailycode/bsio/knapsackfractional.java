@@ -25,6 +25,11 @@ public class knapsackfractional {
             @Override
             public int compare(Ratio r1, Ratio r2) {
                 return (r1.fraction <= r2.fraction) ? 1 : -1;
+
+
+
+
+                
             }
         });
         
