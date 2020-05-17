@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - insertrange",
+            "request": "launch",
+            "mainClass": "insertrange",
+            "projectName": "DSAndAlgo_ad3e943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - firstAndLastIndex",
+            "request": "launch",
+            "mainClass": "firstAndLastIndex",
+            "projectName": "DSAndAlgo_ad3e943c"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - rbdot",
             "request": "launch",
             "mainClass": "rbdot",
