@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - socialdist",
+            "request": "launch",
+            "mainClass": "socialdist",
+            "projectName": "DSAndAlgo_ad3e943c"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - insertrange",
             "request": "launch",
             "mainClass": "insertrange",

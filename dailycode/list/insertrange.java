@@ -9,6 +9,7 @@ public class insertrange {
         for(int[] range: result) {
             System.out.println(range[0] + " " + range[1]);
         }
+        
     }
 
     static int[][] merge(int[][] ranges, int[] newRange) {
@@ -57,5 +58,4 @@ public class insertrange {
 
         return res.stream().toArray(int[][]::new);
     }
-    
 }
