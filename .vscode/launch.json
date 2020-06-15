@@ -2,6 +2,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - subrangehask",
+            "request": "launch",
+            "mainClass": "arrays.subrangehask",
+            "projectName": "DSAndAlgo_ad3e943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - mergeintervals",
+            "request": "launch",
+            "mainClass": "arrays.mergeintervals",
+            "projectName": "DSAndAlgo_ad3e943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - operationQueue",
+            "request": "launch",
+            "mainClass": "Operations.operationQueue",
+            "projectName": "DSAndAlgo_ad3e943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - operationStack",
+            "request": "launch",
+            "mainClass": "Operations.operationStack",
+            "projectName": "DSAndAlgo_ad3e943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - operationMapSet",
+            "request": "launch",
+            "mainClass": "Operations.operationMapSet",
+            "projectName": "DSAndAlgo_ad3e943c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - issubseqequalsk",
+            "request": "launch",
+            "mainClass": "issubseqequalsk",
+            "projectName": "DSAndAlgo_ad3e943c"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - socialdist",
             "request": "launch",
             "mainClass": "socialdist",

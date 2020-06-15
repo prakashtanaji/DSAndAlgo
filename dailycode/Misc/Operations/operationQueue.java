@@ -1,3 +1,5 @@
+package Operations;
+
 import java.util.*;
 
 class operationQueue {
@@ -19,6 +21,9 @@ class operationQueue {
         qu.add(24);
         qu.offer(34); // safe since it doesnt throw exception like add in case capacity restricted queue
 
+        qu.poll();
+        qu.remove(); // safe
+
         System.out.println("Print queue items");
         while(!qu.isEmpty()) {
             int peeked = qu.peek();
@@ -31,5 +36,23 @@ class operationQueue {
         // qu.element();   peek
         // qu.add(e)       offer
         // qu.remove()     poll
+
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+        pq.add(45);
+        pq.add(24);
+        pq.add(54);
+
+        iterateQueue(pq);
+
+
+    }
+
+    static void iterateQueue(Queue<Integer> q) {
+        Iterator<Integer> it = q.iterator();
+        while(it.hasNext()) {
+            System.out.println(it.next());
+        }
+
+        System.out.println();
     }
 }
