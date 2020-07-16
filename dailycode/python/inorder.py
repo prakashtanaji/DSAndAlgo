@@ -41,7 +41,7 @@ while True:
             break
         else:
             top = st.pop()
-            print(top.val, end =' ')
+            print(top.val, end=" ")
             curr = top.right
 
 
