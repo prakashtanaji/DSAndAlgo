@@ -28,7 +28,7 @@ def calcMaxRect(tmp) -> int :
                     topIndex = -1
                     continue
                 print (" st len is not 0")
-                time.sleep(2)
+                #time.sleep(2)
                 topIndex = st[len(st)-1]
 
             print ("append", index)
@@ -39,16 +39,17 @@ def calcMaxRect(tmp) -> int :
     print(st)
     while len(st) > 0 :
         topIndex = st.pop()
-        diff = (index-topIndex)
-        maxVal = max(maxVal, diff*tmp[topIndex])
-        
+        if len(st) == 0:
+            maxVal = max(maxVal, index*tmp[topIndex])
+        else :
+            maxVal = max(maxVal, (index-st[-1]-1)*tmp[topIndex])    
 
     print('returning', maxVal)
     return maxVal
 
 arr =[[1,0,1,0],
-     [1,1,1,1],
-     [1,0,1,1],
+     [1,0,1,0],
+     [0,1,0,1],
      [1,0,1,1]]
 
 tmp = []
