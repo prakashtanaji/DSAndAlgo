@@ -1,13 +1,22 @@
-from collections import deque
+#from collections import deque
+import queue
+import sys
 
-class Cell :
-    def __init__(self,_x,_y):
-        self.x,self.y = _x,_y
+#q = queue.PriorityQueue()
+
+class MyPQ :
+    def __init__(self, mat):
+        self.pq = queue.PriorityQueue()
+        self.mat = mat
+    def add(self, cell) :
+        self.pq.put((mat[cell[0]][cell[1]], cell))
+    def remove(self):
+        return self.pq.get()
 
 mat = [[1,3,5,6],
     [2,5,6,11],
     [5,7,10,12],
-    [13,14,15,16]]
+    [13,14,16,16]]
 
 def kthMin(mat, k):
     m = len(mat) 
@@ -15,26 +24,37 @@ def kthMin(mat, k):
     
     if m * n < k: return -1
     
-    pq = deque()
+    pq = MyPQ(mat)
 
     for i in range(m) :
-        pq.append(Cell(i, 0))
+        pq.add([i, 0])
+
+    print('test')
+    print(pq)
+    mat[0][0] = 1
+    print(pq)
     
-    curr = -1
+    global curr
     i = 0
     while True :
-        curr = pq.popleft()
+        curr = pq.remove()
+        print(curr)
 
         i+=1
 
         if i == k: break
 
-        if curr.y + 1 < n :
-            pq.append(Cell(curr.x, curr.y + 1))
+        if curr[1][1] + 1 < n :
+            pq.add([curr[1][0], curr[1][1] + 1])
 
-    return mat[curr.x][curr.y]
+        print(pq)
 
-k = 10
+    return mat[curr[1][0]][curr[1][1]]
+
+k = int(sys.argv[1])
+if k<1 : 
+    print('enter valid value')
+    exit()
 print("{}th element is {}".format(k, kthMin(mat, k)))
 
 
