@@ -1,7 +1,7 @@
 import sys;
 
 s1 = "abcba"
-s2 = "bcbc7"
+s2 = "aabbc"
 print(s1)
 print(s2)
 
