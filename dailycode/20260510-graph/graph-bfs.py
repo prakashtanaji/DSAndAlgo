@@ -1,11 +1,11 @@
 import graphcommon;# import GraphAdj;
 
-V = 8
-edges = [[0,1],[0,2],[1,3],[2,3],[2,4],[2,5],[3,6],[0,6],[5,7],[1,7],[0,7]]
+V = 7
+edges = [[0,1],[0,2],[1,3],[2,3],[2,4],[2,5],[3,6],[0,6]]
 
 
-graphAdj = graphcommon.GraphAdj(V, edges, True)
-graphMat = graphcommon.GraphMat(V, edges, True)
+graphAdj = graphcommon.GraphAdj(V, edges, False)
+graphMat = graphcommon.GraphMat(V, edges, False)
 
 def bfsMat(mat,  root):
 
@@ -67,8 +67,8 @@ def bfsAdj(adj,  root):
             n-=1
     print(res);
 
-bfsAdj(graphAdj.adjLst, 0);
-bfsMat(graphMat.adjMat, 0);
+bfsAdj(graphAdj.adjLst, 2);
+bfsMat(graphMat.adjMat, 2);
 
 
 
