@@ -25,12 +25,13 @@ def kMergeSortedLists(lists, k):
     while pq:
         (min, id, lst) = heapq.heappop(pq)
         prev.next = lst
+        lst = lst.next
         prev = prev.next
         prev.next = None
 
-        if lst.next is not None:
+        if lst is not None:
             count+=1
-            heapq.heappush(pq, (lst.next.val, count, lst.next))
+            heapq.heappush(pq, (lst.val, count, lst))
 
     return sentinal.next;
 
@@ -59,8 +60,14 @@ def print_list(head):
 
 if __name__ == "__main__":
     # k sorted lists (same idea as ll-mergeKsorted.py mat = [[1,2,4],[2,5,8],[1,9]])
-    arrays = [[1, 2, 4], [2, 5, 8], [1, 9]]
-    k = 3
+    arrays = [
+        [1, 2, 4],
+        [-1250, 5, 8],
+        [1, 9],
+        [],                              # 4th list: 0 elements
+        [0, 3, 6, 10, 12, 15, 18, 20, 22, 25],  # 5th list: 10 sorted elements
+    ]
+    k = 5
     lists = build_lists(arrays)
 
     print("input lists:")
