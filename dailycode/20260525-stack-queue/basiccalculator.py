@@ -15,35 +15,54 @@ def parser(tokens):
     for i in range (len(tokens)):
         if tokens[i] == ")":
             # Parse until prev "(" and add back to stack
-            j = i-1;
+            j = len(opStack)-1;
             subExp = []
-            while tokens[j] != "(":
+            while (str)(opStack[j]) != "(" and j>=0:
                 subExp.append(opStack.pop())
                 j-=1
             opStack.pop()
 
-            opStack.append(evalExp(subExp))
+            opStack.append(evalExp(subExp[::-1]))
         else:
             opStack.append(tokens[i])
 
-    evalExp(opStack)
+    return evalExp(opStack)
 
-    return opStack[0]
+def evaluate(subNumStack, subOpStack):
+    if len(subNumStack) == 1: return
+
+    num2 = (int)(subNumStack.pop())
+    num1 = (int)(subNumStack.pop())
+    optr = subOpStack.pop()
+
+    res = 0
+    if optr == "+": res = num1 +  num2
+    elif optr == "-": res = num1 -  num2
+    elif optr == "*": res = num1 *  num2
+    elif optr == "/": res = (int)(num1 /  num2) 
+    subNumStack.append(res)
 
 def evalExp(exp):
     subOpStack = []
+    subNumStack = []
     for i,token in enumerate(exp):
-        if token in "+-*/":
+        if (str)(token) in "+-*/":
             subOpStack.append(token)
         else: #number
+            subNumStack.append(token)
             if subOpStack and subOpStack[-1] in "*/":
-                subOpStack.append(token)
-                evalLast3(subOpStack)
+                evaluate(subNumStack, subOpStack)
             elif subOpStack and  subOpStack[-1] in "+-":
-                if i != len(exp)-1 and exp[i+1] in "+-":
-                    subOpStack.append(token)
-                    evalLast3(subOpStack)
-    return subOpStack[0]
+                if (i != len(exp)-1 and exp[i+1] in "+-") or (i == len(exp)-1):
+                    evaluate(subNumStack, subOpStack)
+
+
+    evaluate(subNumStack, subOpStack)
+
+    return subNumStack[0]
+
+#def bc2(opStack):
+
 
 def evalLast3(opStack):
     num2 = opStack.pop()
@@ -72,6 +91,7 @@ def lexer(s):
 
 
 if __name__ == "__main__":
-  cases = ["1 + 1", " 2-1 + 2 ", "(1+(-4+5+2)-3)+(6+8)"] # notice unary operator
+  cases = ["1 + 1", " 2-1 + 2 ", "(1+(-4+5+2)-3)+(6+8)", "(1+(-4+5*2))/3", "1+(-4+5*2)/3"] # notice unary operator
+#   cases = ["(1+(-4+5*2))/3"] # notice unary operator
   for expr in cases:
     print(f"{expr!r}: {basiccalculator(expr)}")
