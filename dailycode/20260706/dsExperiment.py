@@ -1,4 +1,40 @@
 if __name__ == "__main__":
+
+
+
+
+    mat = [[0 for i in range(5)] for i in range(5)]
+
+    mat = [
+        [0,1,0,0,1,1],
+        [0,0,1,0,1,1],
+        [0,1,0,0,0,0],
+        [0,1,0,0,1,1],
+        [0,1,0,0,1,1]
+        ]
+
+    def getAdjLand(mat, i,j):
+
+        maxRows = len(mat)
+        maxCols = len(mat[])
+        allSides = [(i-1,j-1),(i-1,j),(i-1,j+1),
+                    (i,j-1),          (i,j+1),
+                    (i+1,j-1),(i+1,j),(i+1,j+1)]
+
+        validCood = []
+        for land in allSides:
+            if land[0] >=0 and land<maxRows and \
+                land[1] >=0 and land<maxCols and \
+                mat[land[0],land[1]] == 1:
+                validCood.append(land)
+        return validCood;
+        
+
+
+    print(mat)
+
+
+
 #List
     # lst = [1,2,3,4,5]
     # lst1 = lst
