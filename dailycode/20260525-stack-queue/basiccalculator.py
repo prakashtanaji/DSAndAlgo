@@ -91,7 +91,7 @@ def lexer(s):
 
 
 if __name__ == "__main__":
-  cases = ["1 + 1", " 2-1 + 2 ", "(1+(-4+5+2)-3)+(6+8)", "(1+(-4+5*2))/3", "1+(-4+5*2)/3"] # notice unary operator
+  cases = ["1 + 1", " 2-1 + 2 ", "(1+(-4+5+2)-3)+(6+8)", "(1+(-4+5*2))/3", "1+(-4+5*2)/3", "1+(-3+5*3*2)/3"] # notice unary operator
 #   cases = ["(1+(-4+5*2))/3"] # notice unary operator
   for expr in cases:
     print(f"{expr!r}: {basiccalculator(expr)}")
